@@ -73,6 +73,13 @@ img + button {
   border-radius: 100px;
 }
 
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(27,27,50,0.5);
+}
+
 #age {
   padding: 2px 8px 2px 5px;
 }
