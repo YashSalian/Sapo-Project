@@ -1,0 +1,92 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form, 
+.modal-field {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 2em 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+}
+
+input,
+textarea,
+select, 
+button {
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+input {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3.5px;
+  border-radius: 12px;
+}
+
+img {
+  padding: 0 0 20px 40px;
+}
+
+h3 {
+  float: right;
+  margin: auto;
+  padding: 40px;
+}
+
+button {
+  margin-bottom: 5%;
+}
+
+img + button {
+  float: right;
+  width: 50px;
+  height: 50px;
+  /* padding: 40px; */
+  border-radius: 100px;
+}
+
+#age {
+  padding: 2px 8px 2px 5px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+#modal-p {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
