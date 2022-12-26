@@ -7,10 +7,12 @@
     <script src="scripts.js"></script>
   </head>
   <body>
-    <h1>Sapdo Form</h1>
-    <p>Please fill out this form if you want</p>
+    <form method="post">
     <div id="form" class="form">
-      <form method="post">
+    
+      <h1>Sapdo Form</h1>
+      <p>Please fill out this form if you want</p>
+    
         <fieldset>
           <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"  /></label>
           <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text"  /></label>
@@ -42,32 +44,28 @@
             <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like to build websites..."></textarea>
           </label>
         </fieldset>
-        <!-- <input class="submit" type="submit" value="Submit"/> -->
       </form>
     </div>
 
-    <fieldset class="modal-field">
+
+
+    <div class="modal-field">
       <p id="modal-p">Press to Modaal:</p>
-      <button id="hidee" class="hidee" onclick="pid()">Modaal</button>
-      
-      <div id="modal" class="modal">
-        
-
-        <div class="flex" >
-          <img src="modaal.png" alt="Modaal Image" width="300px">
-          <button id="donthidee" class="donthidee" onclick="show()"><p class="btn-close">X</p></button>
-        </div>
-
-        <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod et, tempora accusantium veniam dolorem perspiciatis.</p>
-        </div>
-
-      </div>
-        
-      <!-- <div class="overlay hidden"></div> -->
-
-    </fieldset>
+      <!-- opening button -->
+      <button id="open" class="opend">Modaal</button>
+    </div>
     
+
+
+    <div id="modal-container" class="modal-container">
+      <div id="modal" class="modal">
+          <img src="modaal.png" alt="Modaal Image" width="300px">
+          <!-- closing button -->
+          <button id="close" class="closed"><p class="btn-close">X</p></button>
+          <p id="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Quod et, tempora accusantium veniam dolorem perspiciatis.</p>
+      </div>
+    </div>
     
   </body>
 </html>
