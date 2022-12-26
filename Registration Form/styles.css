@@ -4,6 +4,7 @@ body {
   margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
+  display: flex;
   font-family: Tahoma;
   font-size: 16px;
 }
@@ -13,22 +14,19 @@ h1, p {
   text-align: center;
 }
 
-form, 
+form,
 .modal-field {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-fieldset {
+fieldset,
+.modal-field {
   border: none;
   padding: 2em 0;
   border-bottom: 3px solid #3b3b4f;
-}
-
-fieldset:last-of-type {
-  border-bottom: none;
 }
 
 label {
@@ -73,11 +71,8 @@ img + button {
   border-radius: 100px;
 }
 
-.modal {
-  width: 100%;
-  height: 100%;
-  display: none;
-  background-color: rgba(27,27,50,0.5);
+.closed {
+  margin: 25px;
 }
 
 #age {
@@ -90,10 +85,60 @@ img + button {
   vertical-align: middle;
 }
 
-#modal-p {
-  text-align: left;
+/* .modal-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
 }
 
-.hidden {
-  display: none;
+.modal {
+  width: 60vw;
+  height: auto;
+  margin: auto;
+  background-color: rgb(27,27,50);
+  border:solid;
+  border-color: #3b3b4f;
+  border-width: 2px;
+  border-radius: 5px;
+  
+} */
+
+/* .modal-container.show {
+  opacity:1;
+  pointer-events: auto;
 }
+
+.show {
+  opacity:1;
+  pointer-events: auto
+} */
+
+.modal-container {
+  display: auto; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal Content/Box */
+.modal {
+  background-color: rgb(27,27,50);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
