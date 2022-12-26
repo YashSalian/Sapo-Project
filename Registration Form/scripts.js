@@ -1,13 +1,28 @@
-function pid() {
-    document.getElementById("modal-p").innerHTML="I have Modaalled! Weeeeeeeeeeeeeee!"
-    document.getElementById("modal").style.display="block"
-    document.getElementById("form").style.display="none"
-    document.getElementById("hidee").style.display="none"
-};
+// var o=document.getElementById("open")
+// var modal=document.getElementById("modal-container")
+// var c=document.getElementById("close")
 
-function show() {
-    document.getElementById("modal-p").innerHTML="Press to Modaal:"
-    document.getElementById("modal").style.display="none"
-    document.getElementById("form").style.display="block"
-    document.getElementById("hidee").style.display="block"
-};
+
+// o.addEventListener('click', ()=>{
+//     modal.classList.add('show')
+// });
+
+// c.addEventListener('click', ()=>{
+//     modal.classList.remove('show')
+// });
+
+var modal = document.getElementById("modal-container");
+
+var open = document.getElementById("open");
+
+var close = document.getElementsById("close");
+
+// open.onclick = function() {
+//   modal.style.display = "block";
+// }
+// close.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+open.addEventListener('click', ()=>{modal.style.display="block"});
+close.addEventListener('click', ()=>{modal.style.display="none"});
